@@ -35,9 +35,6 @@ class BattleScene extends DataScene {
 
     // Runs when we first enter this scene
     create() {
-
-        new VirtualJoystick(this, 225, 620, 50);
-
         // Utilize a swipe system in this scene
         this.swipe = new SwipeSystem(this);
         this.swipe.on('swipe', (swipe) => {
